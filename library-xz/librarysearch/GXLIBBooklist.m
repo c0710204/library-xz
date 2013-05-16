@@ -26,12 +26,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSMutableURLRequest *ur=[[[NSMutableURLRequest alloc]initWithURL:[NSURL URLWithString:@"http://sslib.thephoenixorg.com/api/api.php?table=booklist"]]retain];
+    NSData *res=[[NSURLConnection sendSynchronousRequest:ur returningResponse:nil error:nil]retain];
+    NSString *_response=[[[NSString alloc]initWithData:res encoding:NSUTF8StringEncoding]retain];
+    NSData *da=[[_response dataUsingEncoding:NSUTF8StringEncoding]retain];
+    data=[[NSJSONSerialization JSONObjectWithData:da options:kNilOptions error:nil]retain];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,26 +48,41 @@
 
 #pragma mark - Table view data source
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 150;
+}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [data count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    CGRect cellFram = CGRectMake(0 , 0, 320 ,150);
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    GXLIBbooklistCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        [[NSBundle mainBundle] loadNibNamed:@"GXLIBbooklistCell" owner:self options:nil];
+        cell = self->loadedcell;
+        cell.frame=cellFram;
+        loadedcell = nil;
+        NSDictionary *rowinfo=[[data objectAtIndex:indexPath.row]retain];
+        cell.ISBN.text=[rowinfo objectForKey:@"ISBN"];
+        cell.title.text=[rowinfo objectForKey:@"title"];
+        cell.author.text=[rowinfo objectForKey:@"author"];
+        cell.published.text=[rowinfo objectForKey:@"publisher"];
+        [rowinfo release];
+        
     }
     
     // Configure the cell...

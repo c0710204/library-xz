@@ -10,4 +10,10 @@
 
 @interface GXLIBbooklistCell : UITableViewCell
 
+@property (retain, nonatomic) IBOutlet UIImageView *bookpic;
+@property (retain, nonatomic) IBOutlet UILabel *title;
+@property (retain, nonatomic) IBOutlet UILabel *author;
+@property (retain, nonatomic) IBOutlet UILabel *published;
+@property (retain, nonatomic) IBOutlet UILabel *ISBN;
+
 @end

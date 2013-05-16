@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface GXLIBLogin : UIViewController
+- (IBAction)login_do;
+@property (retain, nonatomic) IBOutlet UITextField *username;
+- (IBAction)endedit;
+@property (retain, nonatomic) IBOutlet UITextField *password;
 
 @end

@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "GXLIBLogin.h"
 @class GXLIBViewController;
 
 @interface GXLIBAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) GXLIBViewController *viewController;
+@property (strong, nonatomic) GXLIBLogin *viewController;
 
 @end

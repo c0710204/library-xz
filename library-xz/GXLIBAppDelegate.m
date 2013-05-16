@@ -8,7 +8,7 @@
 
 #import "GXLIBAppDelegate.h"
 
-#import "GXLIBViewController.h"
+#import "GXLIBLogin.h"
 
 @implementation GXLIBAppDelegate
 
@@ -23,7 +23,7 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[GXLIBViewController alloc] initWithNibName:@"GXLIBViewController" bundle:nil] autorelease];
+    self.viewController = [[[GXLIBLogin alloc] initWithNibName:@"GXLIBLogin" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

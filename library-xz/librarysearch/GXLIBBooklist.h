@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "GXLIBbooklistCell.h"
 @interface GXLIBBooklist : UITableViewController
+{
+    IBOutlet GXLIBbooklistCell *loadedcell;
+    NSArray *data;
+}
 
 @end

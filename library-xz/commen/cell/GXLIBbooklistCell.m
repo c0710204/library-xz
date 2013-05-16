@@ -14,6 +14,7 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        NSLog(@"cell init");
         // Initialization code
     }
     return self;
@@ -22,8 +23,16 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
-
+   
     // Configure the view for the selected state
 }
 
+- (void)dealloc {
+    [_bookpic release];
+    [_title release];
+    [_author release];
+    [_published release];
+    [_ISBN release];
+    [super dealloc];
+}
 @end

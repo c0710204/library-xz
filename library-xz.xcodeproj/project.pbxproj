@@ -16,9 +16,26 @@
 		18D8397117451B15004908C9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D8397017451B15004908C9 /* Default.png */; };
 		18D8397317451B15004908C9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D8397217451B15004908C9 /* Default@2x.png */; };
 		18D8397517451B15004908C9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D8397417451B15004908C9 /* Default-568h@2x.png */; };
-		18D8397817451B15004908C9 /* GXLIBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8397717451B15004908C9 /* GXLIBViewController.m */; };
-		18D8397B17451B15004908C9 /* GXLIBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D8397917451B15004908C9 /* GXLIBViewController.xib */; };
+		18D8398917451DB8004908C9 /* Need to do.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18D8398817451DB8004908C9 /* Need to do.txt */; };
+		18D8399517452366004908C9 /* libIBApi-member.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D8399417452329004908C9 /* libIBApi-member.a */; };
+		18D839991745240C004908C9 /* GXLIBLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D839971745240C004908C9 /* GXLIBLogin.m */; };
+		18D8399A1745240C004908C9 /* GXLIBLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D839981745240C004908C9 /* GXLIBLogin.xib */; };
+		18D8399C17452D7F004908C9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D8399B17452D7F004908C9 /* Security.framework */; };
+		18D839A317454543004908C9 /* GXLIBBooklist.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D839A117454543004908C9 /* GXLIBBooklist.m */; };
+		18D839A417454543004908C9 /* GXLIBBooklist.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D839A217454543004908C9 /* GXLIBBooklist.xib */; };
+		18D839A7174545B0004908C9 /* GXLIBbooklistCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D839A6174545B0004908C9 /* GXLIBbooklistCell.m */; };
+		18D839AA174545E6004908C9 /* GXLIBbooklistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D839A9174545E6004908C9 /* GXLIBbooklistCell.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18D8399317452329004908C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18D8398C17452329004908C9 /* IBApi-member.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18F1B5DC173D67A9007D8E33;
+			remoteInfo = "IBApi-member";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		18D8395B17451B15004908C9 /* library-xz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "library-xz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,9 +51,19 @@
 		18D8397017451B15004908C9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		18D8397217451B15004908C9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		18D8397417451B15004908C9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		18D8397617451B15004908C9 /* GXLIBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXLIBViewController.h; sourceTree = "<group>"; };
-		18D8397717451B15004908C9 /* GXLIBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXLIBViewController.m; sourceTree = "<group>"; };
-		18D8397A17451B15004908C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GXLIBViewController.xib; sourceTree = "<group>"; };
+		18D8398817451DB8004908C9 /* Need to do.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Need to do.txt"; path = "Documents/Need to do.txt"; sourceTree = "<group>"; };
+		18D8398C17452329004908C9 /* IBApi-member.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "IBApi-member.xcodeproj"; sourceTree = "<group>"; };
+		18D839961745240C004908C9 /* GXLIBLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GXLIBLogin.h; path = login/GXLIBLogin.h; sourceTree = "<group>"; };
+		18D839971745240C004908C9 /* GXLIBLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GXLIBLogin.m; path = login/GXLIBLogin.m; sourceTree = "<group>"; };
+		18D839981745240C004908C9 /* GXLIBLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GXLIBLogin.xib; path = login/GXLIBLogin.xib; sourceTree = "<group>"; };
+		18D8399B17452D7F004908C9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		18D8399F17453437004908C9 /* IBApi_member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IBApi_member.h; path = "IBApi-member/IBApi_member.h"; sourceTree = "<group>"; };
+		18D839A017454543004908C9 /* GXLIBBooklist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GXLIBBooklist.h; path = librarysearch/GXLIBBooklist.h; sourceTree = "<group>"; };
+		18D839A117454543004908C9 /* GXLIBBooklist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GXLIBBooklist.m; path = librarysearch/GXLIBBooklist.m; sourceTree = "<group>"; };
+		18D839A217454543004908C9 /* GXLIBBooklist.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GXLIBBooklist.xib; path = librarysearch/GXLIBBooklist.xib; sourceTree = "<group>"; };
+		18D839A5174545B0004908C9 /* GXLIBbooklistCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GXLIBbooklistCell.h; path = commen/cell/GXLIBbooklistCell.h; sourceTree = "<group>"; };
+		18D839A6174545B0004908C9 /* GXLIBbooklistCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GXLIBbooklistCell.m; path = commen/cell/GXLIBbooklistCell.m; sourceTree = "<group>"; };
+		18D839A9174545E6004908C9 /* GXLIBbooklistCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GXLIBbooklistCell.xib; path = commen/cell/GXLIBbooklistCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D8399C17452D7F004908C9 /* Security.framework in Frameworks */,
+				18D8399517452366004908C9 /* libIBApi-member.a in Frameworks */,
 				18D8395F17451B15004908C9 /* UIKit.framework in Frameworks */,
 				18D8396117451B15004908C9 /* Foundation.framework in Frameworks */,
 				18D8396317451B15004908C9 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +85,10 @@
 		18D8395217451B15004908C9 = {
 			isa = PBXGroup;
 			children = (
+				18D8399F17453437004908C9 /* IBApi_member.h */,
+				18D8399B17452D7F004908C9 /* Security.framework */,
+				18D8398C17452329004908C9 /* IBApi-member.xcodeproj */,
+				18D8398717451D8F004908C9 /* Documents */,
 				18D8396417451B15004908C9 /* library-xz */,
 				18D8395D17451B15004908C9 /* Frameworks */,
 				18D8395C17451B15004908C9 /* Products */,
@@ -83,11 +116,12 @@
 		18D8396417451B15004908C9 /* library-xz */ = {
 			isa = PBXGroup;
 			children = (
-				18D8396D17451B15004908C9 /* GXLIBAppDelegate.h */,
-				18D8396E17451B15004908C9 /* GXLIBAppDelegate.m */,
-				18D8397617451B15004908C9 /* GXLIBViewController.h */,
-				18D8397717451B15004908C9 /* GXLIBViewController.m */,
-				18D8397917451B15004908C9 /* GXLIBViewController.xib */,
+				18D8398617451D11004908C9 /* commen */,
+				18D8398517451D03004908C9 /* helper */,
+				18D8398417451CEE004908C9 /* notice */,
+				18D8398317451CE2004908C9 /* librarysearch */,
+				18D8398217451CA7004908C9 /* mylibrary */,
+				18D8398117451C9B004908C9 /* login */,
 				18D8396517451B15004908C9 /* Supporting Files */,
 			);
 			path = "library-xz";
@@ -105,6 +139,83 @@
 				18D8397417451B15004908C9 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18D8398117451C9B004908C9 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				18D839961745240C004908C9 /* GXLIBLogin.h */,
+				18D839971745240C004908C9 /* GXLIBLogin.m */,
+				18D839981745240C004908C9 /* GXLIBLogin.xib */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+		18D8398217451CA7004908C9 /* mylibrary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = mylibrary;
+			sourceTree = "<group>";
+		};
+		18D8398317451CE2004908C9 /* librarysearch */ = {
+			isa = PBXGroup;
+			children = (
+				18D839A017454543004908C9 /* GXLIBBooklist.h */,
+				18D839A117454543004908C9 /* GXLIBBooklist.m */,
+				18D839A217454543004908C9 /* GXLIBBooklist.xib */,
+			);
+			name = librarysearch;
+			sourceTree = "<group>";
+		};
+		18D8398417451CEE004908C9 /* notice */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = notice;
+			sourceTree = "<group>";
+		};
+		18D8398517451D03004908C9 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = helper;
+			sourceTree = "<group>";
+		};
+		18D8398617451D11004908C9 /* commen */ = {
+			isa = PBXGroup;
+			children = (
+				18D839A8174545B5004908C9 /* cell */,
+				18D8396D17451B15004908C9 /* GXLIBAppDelegate.h */,
+				18D8396E17451B15004908C9 /* GXLIBAppDelegate.m */,
+			);
+			name = commen;
+			sourceTree = "<group>";
+		};
+		18D8398717451D8F004908C9 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				18D8398817451DB8004908C9 /* Need to do.txt */,
+			);
+			name = Documents;
+			sourceTree = "<group>";
+		};
+		18D8398D17452329004908C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18D8399417452329004908C9 /* libIBApi-member.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18D839A8174545B5004908C9 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				18D839A5174545B0004908C9 /* GXLIBbooklistCell.h */,
+				18D839A6174545B0004908C9 /* GXLIBbooklistCell.m */,
+				18D839A9174545E6004908C9 /* GXLIBbooklistCell.xib */,
+			);
+			name = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,12 +258,28 @@
 			mainGroup = 18D8395217451B15004908C9;
 			productRefGroup = 18D8395C17451B15004908C9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 18D8398D17452329004908C9 /* Products */;
+					ProjectRef = 18D8398C17452329004908C9 /* IBApi-member.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				18D8395A17451B15004908C9 /* library-xz */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		18D8399417452329004908C9 /* libIBApi-member.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libIBApi-member.a";
+			remoteRef = 18D8399317452329004908C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		18D8395917451B15004908C9 /* Resources */ = {
@@ -163,7 +290,10 @@
 				18D8397117451B15004908C9 /* Default.png in Resources */,
 				18D8397317451B15004908C9 /* Default@2x.png in Resources */,
 				18D8397517451B15004908C9 /* Default-568h@2x.png in Resources */,
-				18D8397B17451B15004908C9 /* GXLIBViewController.xib in Resources */,
+				18D8398917451DB8004908C9 /* Need to do.txt in Resources */,
+				18D8399A1745240C004908C9 /* GXLIBLogin.xib in Resources */,
+				18D839A417454543004908C9 /* GXLIBBooklist.xib in Resources */,
+				18D839AA174545E6004908C9 /* GXLIBbooklistCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +306,9 @@
 			files = (
 				18D8396B17451B15004908C9 /* main.m in Sources */,
 				18D8396F17451B15004908C9 /* GXLIBAppDelegate.m in Sources */,
-				18D8397817451B15004908C9 /* GXLIBViewController.m in Sources */,
+				18D839991745240C004908C9 /* GXLIBLogin.m in Sources */,
+				18D839A317454543004908C9 /* GXLIBBooklist.m in Sources */,
+				18D839A7174545B0004908C9 /* GXLIBbooklistCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +321,6 @@
 				18D8396817451B15004908C9 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		18D8397917451B15004908C9 /* GXLIBViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18D8397A17451B15004908C9 /* en */,
-			);
-			name = GXLIBViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -262,6 +386,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "library-xz/library-xz-Prefix.pch";
 				INFOPLIST_FILE = "library-xz/library-xz-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -273,6 +398,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "library-xz/library-xz-Prefix.pch";
 				INFOPLIST_FILE = "library-xz/library-xz-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
