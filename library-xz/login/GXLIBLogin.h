@@ -1,5 +1,5 @@
 //
-//  GXLIBViewController.h
+//  GXLIBLogin.h
 //  library-xz
 //
 //  Created by Apple on 13-5-16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GXLIBViewController : UIViewController
+@interface GXLIBLogin : UIViewController
 
 @end
